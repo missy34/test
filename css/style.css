@@ -1,0 +1,700 @@
+/* ここから下に記載していく */
+
+/* header{
+    position: fixed;
+    width: 100%;
+    height: 60px;
+    border: 1px solid lightgray;
+} */
+
+
+body {
+    font-family: "ヒラギノ角ゴ Pro W3","Hiragino Kaku Gothic Pro","メイリオ",Meiryo,"ＭＳ Ｐゴシック","MS PGothic",sans-serif;
+    position: relative;
+    cursor: none;
+}
+      
+.cursor {
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    transform: translate(-20%,-200%);
+    top: 0;
+    left: 0; 
+    z-index: 1002;
+    cursor: none;
+    pointer-events: none;
+}
+        
+.cursor img {
+    width: 100%;
+}
+
+
+header{
+    width: 100%;
+    display: flex;
+    position: fixed;
+    width: 100%;
+    height: 120px;
+    border-bottom:1px solid #ffefa7;
+    box-shadow:1px 1px 1px 1px rgba(250, 242, 199, 0.699);
+    background-color: white;
+    top:0;
+    left:0;
+    z-index: 2000;
+    opacity: 0.8;
+}
+
+.menu-icon{
+    color:white;
+    float:right;
+    display:none;
+}
+  
+
+.main{
+    margin: 120px auto 0;
+}
+
+.header-logo img{
+    margin: 20px 30px 18px 30px;
+}
+
+ul{
+    display: flex;
+}
+
+li{
+    padding: 50px 25px;
+    font-size: 21px;
+    color: #222222;
+}
+
+li a:visited{
+    color: #222222;
+}
+
+.nav {
+    margin: 0 50px 0 auto;
+    color: #222222;
+}
+
+li a:hover{
+    color: #ffd61a;
+}
+
+.box1{
+    position: relative;
+}
+
+.box1-text{
+    width: 100%;
+    position: absolute;
+    color:white;
+    top: 50%;
+    left: 50%;
+    text-align: center;
+    transform: translate(-50%,-50%);
+    line-height: 1;
+}
+
+.box1-logo img{
+    width: 100%;
+}
+
+.box1-text p{
+    font-size: 32px;
+    color: white;
+    font-weight:bold;
+    padding-bottom: 30px;
+    letter-spacing:8px;
+}
+
+.box1-text a{
+    font-size: 24px;
+    letter-spacing:6px;
+}
+
+.box2 h1{
+    color:#ffd61a;
+    font-weight: bold;
+    font-size: 24px;
+    text-align: center;
+    margin: 60px 0px 30px 0px;
+}
+
+.box2 h2{
+    text-align: center;
+    margin-bottom: 40px;
+    font-size:18px;
+    color: #222222;
+}
+
+.about-text{
+    text-align: center;
+    font-size:16px;
+    color: #222222;
+    line-height: 200%;
+    margin-bottom: 50px;
+}
+
+.about-text p{
+    padding:20px 0px;
+}
+
+.box3-img{
+    display: flex;
+    justify-content: center;
+}
+
+.box4 h1{
+    color:#222222;
+    font-weight: bold;
+    font-size: 24px;
+    text-align: center;
+    margin: 60px 0px 30px 0px;
+}
+
+.couse-text{
+    text-align: center;
+    font-size:16px;
+    color: #222222;
+    line-height: 180%;
+    margin-bottom: 60px;
+}
+
+.box5,.box6,.box7{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.box5-b,.box6-a,.box7-b{
+    width: 100%;
+    background-color: rgba(241, 241, 241, 0.973);
+    position: relative;
+}
+
+.box5-text,.box7-text{
+    position: absolute;
+    top: 50%;
+    left: 0%;
+    transform: translate(0%,-50%);
+    padding-left:50px;
+    color: #222222;
+    line-height: 180%;
+}
+
+.box6-text{
+    position: absolute;
+    top: 50%;
+    right: 0%;
+    transform: translate(0%,-50%);
+    padding-right:50px;
+    color: #222222;
+    line-height: 180%;
+}
+
+.box5-text h1,.box6-text h1,.box7-text h1{
+    font-weight: bold;
+    font-size: 24px;
+    margin-bottom: 40px;
+}
+
+.box5-text p,.box6-text p,.box7-text p{
+    font-size: 16px;
+}
+
+.box5-a,.box6-b,.box7-a{
+    width: 100%;
+}
+
+.box5-a img,.box6-b img,.box7-a img{
+    width: 100%;
+}
+
+.bx-wrapper{
+    display: none;
+}
+
+.merit a{
+    display: none;
+}
+
+@media(max-width:1200px){
+    header{
+        width: 100%;
+        display: flex;
+        height: 100px;
+    }
+
+    .main{
+        margin: 100px auto 0;
+    }
+    
+    .header-logo img{
+        width: 82%;
+        margin: 15px 5px 5px 20px;
+    }
+    
+    ul{
+        display: flex;
+    }
+    
+    li{
+        padding: 35px 12px 15px 12px;
+        font-size: 16px;
+    }
+    
+    .nav {
+        margin: 0 30px 0 auto;
+    }
+}
+
+@media(max-width:1000px){
+    .box1-text p{
+        font-size: 30px;
+        color: white;
+        font-weight:bold;
+        padding-bottom: 15px;
+        letter-spacing:6px;
+    }
+
+    .box1-text a{
+        font-size: 16px;
+        letter-spacing:4px;
+    }
+
+    .box5,.box6,.box7{
+        position: relative;/*相対配置*/
+        width: 80%;
+        margin: 0 auto;
+        padding: 10px;
+    }
+
+    .box5-b,.box7-b{
+        position: absolute;/*絶対配置*/
+        color: white;/*文字は白に*/
+        top: 50%;
+        left: 10%;
+    }
+    .box6-a{
+        position: absolute;/*絶対配置*/
+        color: white;/*文字は白に*/
+        top: 50%;
+        left: -5%;
+    }
+
+    .box5-text,.box5-text p,.box6-text,.box6-text p,.box7-text,.box7-text p{
+        padding: 0;
+        color: rgb(0, 0, 0);
+    }
+
+    .box5-a img,.box6-b img,.box7-a img{
+        display: block;
+        opacity: 0.2;
+    }
+}
+
+@media(max-width:900px){
+    .box1-text p{
+        font-size: 25px;
+        color: white;
+        font-weight:bold;
+        padding-bottom: 5px;
+        letter-spacing:5px;
+    }
+
+    .box1-text a{
+        font-size: 14px;
+        letter-spacing:3px;
+    }
+
+    header{
+        width: 100%;
+        display: flex;
+        height: 80px;
+    }
+
+    .main{
+        margin: 80px auto 0;
+    }
+    .header-logo img{
+        width: 70%;
+        margin: 15px 5px 5px 20px;
+    }
+
+    .about-text p{
+        padding:15px 0px;
+    }
+
+    .box3{
+        display: none;
+    }
+    .bx-wrapper{
+        display: block;
+        width: 385px;
+        object-fit: cover;
+        margin: 0 auto;
+    }
+
+    .box4 h1{
+        margin: 90px 0px 30px 0px;
+    }
+
+}
+
+@media(max-width:800px){
+    header{
+        width: 100%;
+        display: flex;
+        height: 70px;
+    }
+
+    .main{
+        margin: 70px auto 0;
+    }
+    .header-logo img{
+        width: 70%;
+        margin: 15px 0px 5px 20px;
+    }
+    .nav {
+        margin: 0 10px 0 auto;
+    }
+}
+
+@media(max-width:670px){
+    
+    .nav{
+        display: none;
+    }
+
+    header{
+        width: 100%;
+        display: flex;
+        height: 48px;
+    }
+
+    .main{
+        margin: 48px auto 0;
+    }
+
+    .header-logo img{
+        width: 35%;
+        margin: 12px 5px 8px 20px;
+    }
+    
+    .about-text p{
+        padding:10px 0px;
+    }
+
+    .header-logo{
+        position: relative;
+    }
+
+    .menu-icon{
+        color: rgb(0, 0, 0);
+        position: absolute;
+        right: 0%;
+        top: 40%;
+        margin: -6px 20px;
+    }
+
+    .fa-navicon:before, .fa-reorder:before, .fa-bars:before{
+        content: "\f0c9";
+        font-size: 28px;
+    }
+
+    .box1-text p{
+        font-size: 20px;
+        color: white;
+        font-weight:bold;
+        padding-bottom: 5px;
+        letter-spacing:4px;
+    }
+
+    .box1-text a{
+        font-size: 10px;
+        letter-spacing:3px;
+    }
+
+    .about-text{
+        text-align: center;
+        font-size:16px;
+        color: #222222;
+        line-height: 200%;
+        margin-bottom: 50px;
+    }
+    
+    .box2,.box4,.box12{
+        box-sizing:border-box;
+        Padding:0 40px;
+    }
+    
+    .boxes{
+        display: none;
+    }
+
+    .merit a{
+        display: block;
+        text-align: left;
+        font-size: 18px;
+        font-weight: bold;
+        letter-spacing:1px;
+        line-height: 180%;
+        padding-top: 10px;
+        padding-left:32px;
+    }
+
+    .merit{
+        display: block;
+        border: solid 2px #747474;
+        width: 400px;
+        height: 140px;
+        margin: 0 auto;
+    }
+}
+
+.box8 h1{
+    color:#ffd61a;
+    font-weight: bold;
+    font-size: 24px;
+    text-align: center;
+    margin: 60px 0px 30px 0px;
+}
+
+.box8 h2{
+    text-align: center;
+    margin-bottom: 60px;
+    font-size:18px;
+    color: #222222;
+}
+
+.box9{
+    display: flex;
+    justify-content: center;
+}
+
+.newswrap{
+    overflow: hidden;	/*拡大時にはみ出た部分を隠す*/
+	width: 300px;	/*画像の幅*/
+	height: 200px;	/*画像の高さ*/
+}
+
+.box9 img{
+    display: block;
+    transition-duration: 0.3s;	/*変化に掛かる時間*/
+}
+
+.box9 img:hover {
+    -webkit-transform: scale(1.2);
+    -moz-transform: scale(1.2);
+    -o-transform: scale(1.2);
+    -ms-transform: scale(1.2);
+    transform: scale(1.1);	/*画像の拡大率*/
+	transition-duration: 0.3s;	/*変化に掛かる時間*/
+}
+
+.box9 h1,p{
+    font-size:14px;
+    color: #222222;
+    line-height: 180%;
+}
+
+.box9 h1{
+    padding: 30px 0 24px 0;
+}
+
+.news{
+    width: 300px;
+    padding:0 15px;
+}
+
+.box10{
+    padding:60px 0;
+    display: flex;
+    justify-content: center;
+}
+
+.btn {
+    width: 300px;
+    height: 60px;
+    text-decoration: none;
+    background: #ffd61a;
+    color: white;
+    border-bottom: solid 3px #ac8722;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.btn:active {
+    transform: translateY(3px);
+    border-bottom: none;
+}
+
+.box11{
+    background-color: rgba(241, 241, 241, 0.973);
+}
+.box11 h1{
+    color:#222222;
+    font-weight: bold;
+    font-size: 24px;
+    text-align: center;
+    padding: 60px 0 30px;
+}
+
+.access-text p{
+    text-align: center;
+    font-size:16px;
+    color: #222222;
+    line-height: 180%;
+}
+
+iframe{
+    margin: 60px 0;
+    width: 100%;
+}
+
+.access-text table{
+    display: flex;
+    justify-content: center;
+    padding-bottom: 30px;
+}
+
+.access-text th{
+    width: 150px;
+}
+
+.access-text td{
+    width: 370px;
+}
+
+.access-text th,td{
+    padding-bottom: 30px;
+}
+
+.box12 h1{
+    color:#222222;
+    font-weight: bold;
+    font-size: 24px;
+    text-align: center;
+    margin: 60px 0px 30px 0px;
+}
+
+.box12 h2{
+    text-align: center;
+    margin-bottom: 60px;
+    font-size:16px;
+    color: #222222;
+}
+
+.contact-text{
+    text-align: center;
+    font-size:16px;
+    color: #222222;
+    line-height: 200%;
+    margin-bottom: 50px;
+}
+
+.contact-text p{
+    padding-bottom: 30px;
+}
+
+.box13 table{
+    display: flex;
+    justify-content: center;
+}
+
+.box13 th{
+    width: 100px;
+}
+
+.box13 td{
+    width: 500px;
+}
+
+.box13 th,td{
+    padding-bottom: 20px;
+}
+
+.label{
+    float: left;
+    width:230px;
+    padding-left: 16px;
+    color: #222222;
+    font-size:16px;
+    line-height: 150%;
+}
+
+.must::after {
+    content: "必須";
+    margin-left: 18px;
+    color: #fff;
+    background: rgb(109, 109, 109);
+    padding: 3px 6px;
+    font-size: 12px;
+    border-radius: 20%;
+}
+
+.item {
+    width: 700px;
+    height: auto;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+    color: #222222;
+}
+
+.input,textarea{
+    margin: 8px;
+    line-height: 200%;
+}
+
+textarea{
+    border: solid 1px #bfbfbf;
+    width: 328px;
+}
+
+input{
+    padding: 10px;
+    border: solid 1px #bfbfbf;
+    font-size:16px;
+}
+
+select{
+    width: 328px;
+    height: 40px;
+    font-size:16px;
+    color: #222222;
+}
+
+textarea{
+    height: 100px;
+}
+
+.input label{
+    line-height: 300%;
+}
+
+.box14{
+    padding:60px 0 140px 0;
+    display: flex;
+    justify-content: center;
+}
+
+.footer{
+    width: 100%;
+    height: auto;
+    padding: 30px 0;
+    background-color: #707070;
+}
+
+.footer p{
+    text-align: center;
+    color:white;
+}
+
